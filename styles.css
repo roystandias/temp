@@ -1,0 +1,89 @@
+/* Global view aka desktop view */
+body{
+    font-family: 'Asap', sans-serif;
+}
+h1{
+    color:red;
+}
+/* Navbar Start */
+.header-container{
+    background-color: grey;
+    min-height: 100px;
+    margin-bottom: 40px;
+}
+header{
+    max-width: 1024px;
+    background-color: rgb(150, 182, 150);
+    min-height: 100px;
+    margin: 0 auto;
+}
+/* Navbar End */
+
+
+
+
+.container{
+   
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.col{
+  
+    width: 30% ;
+    margin-bottom: 40px;
+    background-color: rgba(36, 172, 172, 0.979);
+}
+.col p{
+    color: white;
+    font-size: .875rem;
+    padding: 20px 25px;
+    line-height: 1,25rem;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+.col img{
+   width: 100%; 
+   height: auto;
+}
+.col p::first-line{
+    font-weight: 700;
+}
+
+/* Tablet View */
+@media (max-width: 769px){
+    
+
+.col{
+    width:48%
+}
+
+.hide-desktop-only{
+    display: block;
+}
+
+
+}
+
+
+
+
+
+
+/* mobile view */
+
+@media(max-width: 500px){
+
+    .col{
+        width:100%
+    }
+.hide-mobile{
+    display: none;
+}
+}
